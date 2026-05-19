@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portal QA — Ferramentas de Qualidade</title>
+  <meta name="description" content="Hub de ferramentas de QA: geração de planos de teste a partir de HU e geração de evidências em PDF." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="hero">
+    <div class="hero-inner">
+      <span class="logo">🧪</span>
+      <h1>Portal QA</h1>
+      <p class="tagline">Ferramentas integradas para fluxo de qualidade — da história de usuário ao documento de evidências.</p>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="cards">
+      <a class="card" href="https://qa-assistant-hu.vercel.app" target="_blank" rel="noopener">
+        <div class="card-icon">🧪</div>
+        <h2>QA Assistant</h2>
+        <p class="card-desc">
+          Gera planos de teste manuais a partir de Histórias de Usuário, com análise por IA (Gemini, OpenAI ou Anthropic) e exportação em Markdown ou JSON BDD.
+        </p>
+        <ul class="card-features">
+          <li>Importação em lote de HUs</li>
+          <li>Análise por motor de regras + IA</li>
+          <li>Exportação para o PlanEvidencies</li>
+        </ul>
+        <span class="card-cta">Abrir QA Assistant →</span>
+      </a>
+
+      <a class="card" href="https://planevidencies.vercel.app" target="_blank" rel="noopener" id="planevidenciesLink">
+        <div class="card-icon">📄</div>
+        <h2>PlanEvidencies</h2>
+        <p class="card-desc">
+          Monta documentação de evidências de teste com cenários, prints e descrições, gerando arquivos em LaTeX e PDF prontos para entrega.
+        </p>
+        <ul class="card-features">
+          <li>Cenários em formato BDD</li>
+          <li>Upload de prints por cenário</li>
+          <li>Exportação direta em PDF</li>
+        </ul>
+        <span class="card-cta">Abrir PlanEvidencies →</span>
+      </a>
+    </section>
+
+    <section class="flow">
+      <h3>Fluxo recomendado</h3>
+      <ol>
+        <li><strong>QA Assistant</strong> — colar/importar HU, gerar plano de testes com IA</li>
+        <li><strong>Exportar JSON (BDD)</strong> — baixar o arquivo com os cenários no formato Gherkin</li>
+        <li><strong>PlanEvidencies</strong> — importar o JSON, anexar prints e gerar o PDF final de evidências</li>
+      </ol>
+    </section>
+  </main>
+
+  <footer class="app-footer">
+    <p>Portal QA • Equipe de Qualidade Fabrica</p>
+  </footer>
+</body>
+</html>
